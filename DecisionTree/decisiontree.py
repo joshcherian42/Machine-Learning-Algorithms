@@ -10,7 +10,6 @@ class DecisionTree:
         self.max_depth = max_depth
         self.root = None
         self.criterion = Splitter(criterion=criterion)
-        self.tree_weight = 1
         self.min_impurity_decrease = min_impurity_decrease
 
     def _build(self, X, y, depth=0):
